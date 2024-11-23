@@ -1,0 +1,474 @@
+@font-face {
+    font-family: MonsterHunter;
+    src: url('./fuente/MhWorld-AthemWulf.ttf');
+}
+
+body {
+    font-family: MonsterHunter;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 53, 68);
+}
+
+/* Banner */
+.banner {
+    background-color: #22313F;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 180px;
+    height: 180px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.logo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.site-name {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ECF0F1;
+    font-family: Verdana;
+}
+
+.banner-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons, .nav, .search-icon {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.busqueda {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-box {
+    width: 30px;
+    height: 30px;
+    background-color: #7F8C8D;
+    overflow: hidden;
+}
+
+.search-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav a {
+    padding: 5px 10px;
+    background-color: #34495E;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ECF0F1;
+    font-size: 20px;
+}
+
+/*Pagina "Inicio"*/
+/*.......................................................................................................................................................................................*/
+.home {
+    width: 100%;
+    min-height: 900px;
+    background: url("imgbanner/Banner.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start; /* Alinea el contenido al principio (izquierda) */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding-left: 20px; /* Opcional, para agregar un pequeño margen */
+    margin-bottom: 50px; /* Espacio debajo de la sección */
+}
+.home-text{
+    color: #ffffff;
+    text-align: left;
+    margin-top: 500px; /* Ajusta este valor para mover el texto hacia abajo */
+}
+
+.home-title{
+    font-size: 3.5rem;
+}
+
+
+/*.......................................................................................................................................................................................*/
+/* Contenedor de las tarjetas */
+.card-container {
+    display: flex;
+    gap: 100px;/*separacion entre las tarjetas*/
+    padding: 20px;
+    display: flex; /* Habilitar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-bottom: 50px; /* Espacio debajo de la sección */
+}
+
+/* Estilo de las tarjetas */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 500px; /* Cambia el ancho de la tarjeta */
+    height: 450px; /* Cambia la altura de la tarjeta */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen de las tarjetas */
+.card-image {
+    width: 100%;
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/* Título de las tarjetas */
+.card-title {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: #000000;
+}
+
+/* Descripción de las tarjetas */
+.card-description {
+    font-size: 1em;
+    color: #000000;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+/* Botón de las tarjetas */
+.card-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #444;
+}
+
+.button-link:link, .button-link:visited{
+    color: white;
+    font-family: MonsterHunter;
+}
+
+/*.......................................................................................................................................................................................*/
+/* Contenedor principal */
+.about.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Espacio debajo de la sección */
+}
+
+/* Contenido de texto */
+.contentBx {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.titleText {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn2:hover {
+    background-color: #555;
+}
+
+/* Imagen */
+.imgBx {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBx img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fitBg{
+    width: 400px;
+}
+/*.......................................................................................................................................................................................*/
+.video-section {
+    width: 100%;
+    min-height: 500px;
+    background: url("imgbanner/1066689.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px; /* Ajusta este valor para mover el contenido hacia abajo */
+}
+
+.video-text {
+    text-align: center;
+    color: white; /* O el color que prefieras para el texto */
+    margin-bottom: 20px; /* Espacio entre el texto y el video */
+}
+
+.video-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.video-subtitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.video-container {
+    width: 80%; /* Puedes ajustar el tamaño del contenedor del video */
+    max-width: 1000px; /* Define un tamaño máximo si lo prefieres */
+    aspect-ratio: 16/9; /* Mantiene la relación de aspecto de un video */
+    margin-bottom: 80px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*.......................................................................................................................................................................................*/
+/* Sección Comprar Monster Hunter World */
+.buy-game {
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 50px; /* Espacio debajo de la sección */
+  }
+  
+  .section-title {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .buy-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .buy-card {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .buy-image {
+    width: 100%;
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  
+  .buy-title {
+    font-size: 22px;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .buy-description {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  .buy-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #2980b9;
+  }
+  
+/*.......................................................................................................................................................................................*/
+  /* Footer */
+.footer {
+    position: relative;
+    background: url("imgbanner/1324264.jpeg") no-repeat center center;
+    background-size: cover; /* Asegura que la imagen cubra todo el footer */
+    color: #ecf0f1; /* Color de texto claro */
+    padding: 40px 0;
+  }
+  
+  .footer-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Capa semitransparente oscura */
+    padding: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-link {
+    color: #ecf0f1; /* Blanco roto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px;
+  }
+  
+  .footer-link:hover {
+    color: #3498db; /* Azul claro al pasar el mouse */
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .social-name {
+    font-size: 14px;
+  }
+
+/* Página "Sobre Nosotros" */
+.integrantes-container {
+    display: flex;
+    justify-content: center; /* Centra los integrantes */
+    flex-wrap: wrap; /* Permite que se ajusten a varias líneas si es necesario */
+    gap: 20px; /* Espacio entre los cuadros de los integrantes */
+    margin-top: 30px;
+    font-family: Verdana;
+}
+
+.integrante {
+    background-color: beige;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+}
+
+/* Títulos */
+.titulo {
+    text-align: center;
+    color: white;
+    font-family: Verdana;
+}
+
+/* Pagina Monstruos */
+
+.cajaBusqueda{
+    text-align: center;
+}
+
+#Nombre{
+    margin-bottom: 20px;
+    width: 400px;
+}
+.resultados{
+    margin-bottom: 50px;
+}
+
+label{
+    color: white;
+}
+
+/*Pagina Armas */
+.opciones{
+    text-align: center;
+    margin: auto;
+}
+
+.iconoArma{
+    width: 30px;
+    height: 30px;
+}
