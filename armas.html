@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstruos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body style="background-color: #2C3E50;"> 
+    <!-- Banner -->
+    <header class="banner">
+        <!-- Logo y Nombre del sitio centrado -->
+        <div class="logo">
+            <!-- Logo como imagen -->
+            <div class="logo-img">
+                <img src="imgbanner/VeniceAI_1vlZS1X-removebg-preview (1).png" alt="Logo del Sitio">
+            </div>
+            <span class="site-name">La Biblioteca del Cazador</span>
+        </div>
+
+        <!-- Parte inferior del banner -->
+        <div class="banner-bottom">
+            <!-- Redes Sociales con imágenes -->
+            <div class="social-icons">
+                <div class="social-icon">
+                    <img src="imgbanner/whatsapp-logo-1-1.png" alt="Red Social 1">
+                </div>
+                <div class="social-icon">
+                    <img src="imgbanner/R.png" alt="Red Social 2">
+                </div>
+                <div class="social-icon">
+                    <img src="imgbanner/twitter-x-logo-png-9.png" alt="Red Social 3">
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <nav class="nav">
+                <a href="Index.html">home</a>
+                <a href="monstruos.html">monstruos</a>
+                <a href="armas.html">armas</a>
+                <a href="armaduras.html">armaduras</a>
+                <a href="sobrenosotros.html">sobre nosotros</a>
+            </nav>
+
+            <!-- Icono de Búsqueda con imagen -->
+            <div class="search-icon">
+                <a href="https://www.google.com" target="_blank">
+                    <div class="search-box">
+                        <img src="imgbanner/pngtree-magnifying-glass-line-icon-png-image_9034138.png" alt="Buscar">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section>
+    <!-- Contenido debajo del banner -->
+     <div class="cajaBusqueda">
+        <h1 class="titulo">Armas</h1>
+        <button id="buscarMonstruo" onclick="buscarArma()" type="button"><img src="./imgbanner/busqueda.png" class="busqueda" ></button>
+        <input type="text" placeholder="Buscar por Nombre" id="Nombre">
+        <br>
+        <table class="opciones">
+            <tr>
+                <td>
+                    <input type="radio" id="todos" name="arma" value="todos" checked="checked">
+                    <label for="todos">todas</label>
+                </td>
+                <td>
+                    <input type="radio" id="great" name="arma" value="great">
+                    <label for="great"><img src="./iconos/gs.png" alt="Greatsword" class="iconoArma" title="Gran Espada"></label>
+                </td>
+                <td>
+                    <input type="radio" id="dual" name="arma" value="dual">
+                    <label for="dual"><img src="./iconos/db.png" alt="Dual blades" class="iconoArma" title="Espadas Duales"></label>
+                </td>
+                <td>
+                    <input type="radio" id="lance" name="arma" value="lance">
+                    <label for="lance"><img src="./iconos/lnc.png" alt="Lance" class="iconoArma" title="Lanza"></label>
+                </td>
+                <td>
+                    <input type="radio" id="charge" name="arma" value="charge">
+                    <label for="charge"><img src="./iconos/cb.png" alt="Charge Blade" class="iconoArma" title="Espada Cargada"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="heavyb" name="arma" value="heavyb">
+                    <label for="heavyb"><img src="./iconos/hbg.png" alt="Heavy Bowgun" class="iconoArma" title="Ballesta Pesada"></label>
+                </td>
+                <td>
+                    <input type="radio" id="long" name="arma" value="long">
+                    <label for="long"><img src="./iconos/ls.png" alt="Longsword" class="iconoArma" title="Espada Larga"></label>
+                </td>
+                <td>
+                    <input type="radio" id="hammer" name="arma" value="hammer">
+                    <label for="hammer"><img src="./iconos/hm.png" alt="Hammer" class="iconoArma" title="Martillo"></label>
+                </td>
+                <td>
+                    <input type="radio" id="gunlance" name="arma" value="gunlance">
+                    <label for="gunlance"><img src="./iconos/gnc.png" alt="Gunlance" class="iconoArma" title="Lanza Pistola"></label>
+                </td>
+                <td>
+                    <input type="radio" id="glaive" name="arma" value="glaive">
+                    <label for="glaive"><img src="./iconos/ig.png" alt="Insect Glaive" class="iconoArma" title="Glaive Insecto"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" id="bow" name="arma" value="bow">
+                    <label for="bow"><img src="./iconos/bow.png" alt="Bow" class="iconoArma" title="Arco"></label>
+                </td>
+                <td>
+                    <input type="radio" id="shield" name="arma" value="shield">
+                    <label for="shield"><img src="./iconos/sns.png" alt="Sword and Shield" class="iconoArma" title="Espada y Escudo"></label>
+                </td>
+                <td>
+                    <input type="radio" id="horn" name="arma" value="horn">
+                    <label for="horn"><img src="./iconos/hh.png" alt="Hunting Horn" class="iconoArma" title="Cornamusa"></label>
+                </td>
+                <td>
+                    <input type="radio" id="axe" name="arma" value="axe">
+                    <label for="axe"><img src="./iconos/sa.png" alt="Switch Axe" class="iconoArma" title="Hacha Espada"></label>
+                </td>
+                <td>
+                    <input type="radio" id="lightb" name="arma" value="lightb">
+                    <label for="lightb"><img src="./iconos/lbg.png" alt="Light Bowgun" class="iconoArma" title="Ballesta Ligera"></label>
+                </td>
+            </tr>
+        </table>
+     </div>
+     <div class="resultados" id="resultados">
+     </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-overlay">
+          <div class="footer-content container">
+            <!-- Enlaces -->
+            <div class="footer-links">
+              <a href="Index.html" class="footer-link">home</a>
+              <a href="monstruos.html" class="footer-link">monstruos</a>
+              <a href="armas.html" class="footer-link">armas</a>
+              <a href="armaduras.html" class="footer-link">armaduras</a>
+              <a href="sobrenosotros.html" class="footer-link">quiénes somos</a>
+            </div>
+      
+            <!-- Redes sociales -->
+            <div class="footer-socials">
+              <div class="social-item">
+                <img src="imgbanner/Redes/facebook_.png" alt="Facebook" class="social-icon" />
+                <span class="social-name">facebook</span>
+              </div>
+              <div class="social-item">
+                <img src="imgbanner/Redes/twitter-x-logo-png-9.png" alt="Twitter" class="social-icon" />
+                <span class="social-name">twitter</span>
+              </div>
+              <div class="social-item">
+                <img src="imgbanner/Redes/instagram_.png" alt="Instagram" class="social-icon" />
+                <span class="social-name">instagram</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="fetchMHW.js">
+    </script>
+</body>
+</html>

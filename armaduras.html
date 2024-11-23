@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstruos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body style="background-color: #2C3E50;"> 
+    <!-- Banner -->
+    <header class="banner">
+        <!-- Logo y Nombre del sitio centrado -->
+        <div class="logo">
+            <!-- Logo como imagen -->
+            <div class="logo-img">
+                <img src="imgbanner/VeniceAI_1vlZS1X-removebg-preview (1).png" alt="Logo del Sitio">
+            </div>
+            <span class="site-name">La Biblioteca del Cazador</span>
+        </div>
+
+        <!-- Parte inferior del banner -->
+        <div class="banner-bottom">
+            <!-- Redes Sociales con imágenes -->
+            <div class="social-icons">
+                <div class="social-icon">
+                    <img src="imgbanner/whatsapp-logo-1-1.png" alt="Red Social 1">
+                </div>
+                <div class="social-icon">
+                    <img src="imgbanner/R.png" alt="Red Social 2">
+                </div>
+                <div class="social-icon">
+                    <img src="imgbanner/twitter-x-logo-png-9.png" alt="Red Social 3">
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <nav class="nav">
+                <a href="Index.html">home</a>
+                <a href="monstruos.html">monstruos</a>
+                <a href="armas.html">armas</a>
+                <a href="armaduras.html">armaduras</a>
+                <a href="sobrenosotros.html">sobre nosotros</a>
+            </nav>
+
+            <!-- Icono de Búsqueda con imagen -->
+            <div class="search-icon">
+                <a href="https://www.google.com" target="_blank">
+                    <div class="search-box">
+                        <img src="imgbanner/pngtree-magnifying-glass-line-icon-png-image_9034138.png" alt="Buscar">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section>
+    <!-- Contenido debajo del banner -->
+     <div class="cajaBusqueda">
+        <h1 class="titulo">Armaduras</h1>
+        <button id="buscarMonstruo" onclick="buscarArmadura()" type="button"><img src="./imgbanner/busqueda.png" class="busqueda" ></button>
+        <input type="text" placeholder="Buscar por Nombre" id="Nombre">
+        <br>
+        <input type="radio" id="todos" name="armadura" value="todos" checked="checked">
+        <label for="todos">todos</label>
+        <input type="radio" id="head" name="armadura" value="head">
+        <label for="head">casco</label>
+        <input type="radio" id="chest" name="armadura" value="chest">
+        <label for="chest">coraza</label>
+        <input type="radio" id="gloves" name="armadura" value="gloves">
+        <label for="gloves">guantes</label>
+        <input type="radio" id="waist" name="armadura" value="waist">
+        <label for="waist">cinturon</label>
+        <input type="radio" id="legs" name="armadura" value="legs">
+        <label for="legs">botas</label>
+     </div>
+     <div class="resultados" id="resultados">
+     </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-overlay">
+          <div class="footer-content container">
+            <!-- Enlaces -->
+            <div class="footer-links">
+              <a href="Index.html" class="footer-link">home</a>
+              <a href="monstruos.html" class="footer-link">monstruos</a>
+              <a href="armas.html" class="footer-link">armas</a>
+              <a href="armaduras.html" class="footer-link">armaduras</a>
+              <a href="sobrenosotros.html" class="footer-link">quiénes somos</a>
+            </div>
+      
+            <!-- Redes sociales -->
+            <div class="footer-socials">
+              <div class="social-item">
+                <img src="imgbanner/Redes/facebook_.png" alt="Facebook" class="social-icon" />
+                <span class="social-name">facebook</span>
+              </div>
+              <div class="social-item">
+                <img src="imgbanner/Redes/twitter-x-logo-png-9.png" alt="Twitter" class="social-icon" />
+                <span class="social-name">twitter</span>
+              </div>
+              <div class="social-item">
+                <img src="imgbanner/Redes/instagram_.png" alt="Instagram" class="social-icon" />
+                <span class="social-name">instagram</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="fetchMHW.js">
+    </script>
+</body>
+</html>
